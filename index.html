@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            header, main, footer {
+                padding-left: 300px;
+            }
+            @media only screen and (max-width : 992px) {
+                header, main, footer {
+                    padding-left: 0;
+                }
+            }
+            blockquote {
+                border-left-color: #42A5F5;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="navbar-fixed">
+        <nav class="blue lighten-1">
+            <ul class="nav-wrapper">
+                <a class="sidenav-trigger" data-target="sidebar"><i class="material-icons">menu</i></a>
+                <a href="http://parangee.epizy.com" class="brand-logo center">파랑이 TV</a>
+                <li><a href="https://www.youtube.com/channel/UCrbQWlYN_E8IUQbDWQ2Ot5w?view_as=subscriber">파랑이 유튜브로 이동</a></li>
+            </ul>
+        </nav>
+        </header>
+        <ul class="sidenav sidenav-fixed" id="sidebar">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header hoverable waves-effect">마인크래프트 명령어 강좌</div>
+                    <div onclick="window.location.href = '#1';" class="collapsible-body hoverable waves-effect"><span style="padding-left: 10px;" class="blue-text">/give</span></div>
+                </li>
+            </ul>
+        </ul>
+        <main>
+            
+        </main>
+        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.collapsible').collapsible();
+            })
+        </script>
+    </body>
+</html>
