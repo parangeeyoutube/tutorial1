@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            header, main, footer {
+                padding-left: 300px;
+            }
+            @media only screen and (max-width : 992px) {
+                header, main, footer {
+                    padding-left: 0;
+                }
+            }
+            blockquote {
+                border-left-color: #42A5F5;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                padding-left: 10px;
+                padding-bottom: 10px;
+                border-bottom: 5px solid #42A5F5;
+                border-left: 10px solid #42A5F5;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="navbar-fixed">
+        <nav class="blue lighten-1">
+            <ul class="nav-wrapper">
+                <a class="sidenav-trigger" data-target="sidebar"><i class="material-icons">menu</i></a>
+                <a href="http://parangee.epizy.com" class="brand-logo center">파랑이 TV</a>
+                <li><a href="https://www.youtube.com/channel/UCrbQWlYN_E8IUQbDWQ2Ot5w?view_as=subscriber">파랑이 유튜브로 이동</a></li>
+            </ul>
+        </nav>
+        </header>
+        <ul class="sidenav sidenav-fixed" id="sidebar">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header hoverable waves-effect">마인크래프트 명령어 강좌</div>
+                    <div onclick="window.location.href = '/';" class="collapsible-body hoverable waves-effect"><span style="padding-left: 10px;" class="blue-text">/give</span></div>
+                </li>
+            </ul>
+        </ul>
+        <main class="container">
+            <div class="card-panel">
+                <h4>give 명령어 사용법</h4>
+                안녕하세요, 파랑이입니다.<br>
+                이번에는 제가 마인크래프트 명령어 강좌를 준비해왔습니다.<br>
+                give 명령어는 /give 플레이어 아이템 갯수 태그 이런식으로 구성되어 있습니다.<br>
+                다른것들은 영상에서 보시고 제가 이 글을 쓴 이유는 영상의 give 명령어를 활용하는 방법의 코드를 알려드리려고 했습니다.<br>
+                이제 코드를 알려드리겠습니다.
+                <blockquote>
+                    첫번째 : 임펄스(/clear 플레이어 (교환할때 필요한 아이템) 데이터태그 갯수)<br>
+                    두번째: 체인(/give 플레이어(줄아이템 갯수 태그))
+                </blockquote>
+                타이틀은 다음강좌에서 할거기때문에 생략하겠습니다.
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.collapsible').collapsible();
+            })
+        </script>
+    </body>
+</html>
